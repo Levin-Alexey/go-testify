@@ -23,7 +23,7 @@ func TestMainHandlerWhenAllOk(t *testing.T) {
 }
 
 func TestMainHandlerWhenWrongCity(t *testing.T) {
-	req, err := http.NewRequest("GET", "/cafe?count=3&city=spb", nil)
+	req, err := http.NewRequest("GET", "/cafe?count=3&city=penza", nil)
 	require.NoError(t, err)
 
 	responseRecorder := httptest.NewRecorder()
